@@ -27,11 +27,11 @@ The ChatClient is an object which is used for communicating with the partner
 ### Methods
 * `on(event: String, handler: (event: ChatEvent | MessageChatEvent | ImageChatEvent) => Any) -> Void` – used for registering an event handler
 * `sendImage(url: String) -> Void` – send an image to the partner. The `url`-parameter should be a base64-data-URI-string of a JPEG-formatted image.
-* `requestImage( Void )` – request a image from the partner. This will update the partner's user interface, informing about the request.
-* `reportTyping( Void ) -> Void` – inform the partner that the client is typing, by updating the partner's user interface.
-* `reportIdle( Void ) -> Void` – inform the partner that the client has stopped typing, by updating the partner's user interface.
+* `requestImage(Void)` – request a image from the partner. This will update the partner's user interface, informing about the request.
+* `reportTyping(Void) -> Void` – inform the partner that the client is typing, by updating the partner's user interface.
+* `reportIdle(Void) -> Void` – inform the partner that the client has stopped typing, by updating the partner's user interface.
 * `send(text: String) -> Void` – send a string as a text-message to the partner.
-* `Connect( Void ) -> Void` – Invoking this method will start searching for a chat-room and eventually start a chat session.
+* `Connect(Void) -> Void` – Invoking this method will start searching for a chat-room and eventually start a chat session.
 
 ### Events
 * `connected: ChatEvent` – client has connected to a partner
